@@ -40,8 +40,8 @@
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="jComboBox1" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
-                          <Component id="jLabelSenha1" alignment="1" min="-2" pref="152" max="-2" attributes="0"/>
+                          <Component id="jComboBoxTipoUsuario" alignment="0" min="-2" pref="140" max="-2" attributes="0"/>
+                          <Component id="jLabelTipoUsuario" alignment="1" min="-2" pref="152" max="-2" attributes="0"/>
                       </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
@@ -53,8 +53,8 @@
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="jTextFieldNomeDeUsuario" min="-2" pref="386" max="-2" attributes="0"/>
                                   <Component id="jLabelUsuario" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSenha2" alignment="0" min="-2" max="-2" attributes="0"/>
-                                  <Component id="jLabelSenha" alignment="0" min="-2" pref="202" max="-2" attributes="0"/>
+                                  <Component id="jLabelSenha" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="jLabelConfirmarSenha" alignment="0" min="-2" pref="202" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                       </Group>
@@ -96,16 +96,16 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
-                      <Component id="jLabelSenha1" min="-2" pref="27" max="-2" attributes="0"/>
+                      <Component id="jLabelTipoUsuario" min="-2" pref="27" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="jComboBox1" min="-2" max="-2" attributes="0"/>
+                      <Component id="jComboBoxTipoUsuario" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="55" max="32767" attributes="0"/>
-                      <Component id="jLabelSenha2" min="-2" pref="27" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
                       <Component id="jLabelSenha" min="-2" pref="27" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="43" max="-2" attributes="0"/>
+                      <Component id="jLabelConfirmarSenha" min="-2" pref="27" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="jPasswordFieldConfirmarSenha" min="-2" pref="32" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -147,7 +147,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jTextFieldNomeDeUsuarioActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabelSenha">
+    <Component class="javax.swing.JLabel" name="jLabelConfirmarSenha">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="23" style="0"/>
@@ -199,7 +199,7 @@
         <Property name="text" type="java.lang.String" value="Registro"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabelSenha1">
+    <Component class="javax.swing.JLabel" name="jLabelTipoUsuario">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="20" style="0"/>
@@ -235,7 +235,7 @@
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonVoltarActionPerformed"/>
       </Events>
     </Component>
-    <Component class="javax.swing.JLabel" name="jLabelSenha2">
+    <Component class="javax.swing.JLabel" name="jLabelSenha">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="23" style="0"/>
@@ -243,7 +243,7 @@
         <Property name="text" type="java.lang.String" value="Senha"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JComboBox" name="jComboBox1">
+    <Component class="javax.swing.JComboBox" name="jComboBoxTipoUsuario">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="14" style="1"/>
@@ -258,7 +258,7 @@
         </Property>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBox1ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jComboBoxTipoUsuarioActionPerformed"/>
       </Events>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;String&gt;"/>

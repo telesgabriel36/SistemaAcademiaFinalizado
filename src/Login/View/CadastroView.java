@@ -33,16 +33,16 @@ public class CadastroView extends javax.swing.JFrame {
 
         jLabelIconeUsuario = new javax.swing.JLabel();
         jTextFieldNomeDeUsuario = new javax.swing.JTextField();
-        jLabelSenha = new javax.swing.JLabel();
+        jLabelConfirmarSenha = new javax.swing.JLabel();
         jLabelUsuario = new javax.swing.JLabel();
         jPasswordFieldConfirmarSenha = new javax.swing.JPasswordField();
         jButtonEnviar = new javax.swing.JButton();
         jLabelCadastrar = new javax.swing.JLabel();
-        jLabelSenha1 = new javax.swing.JLabel();
+        jLabelTipoUsuario = new javax.swing.JLabel();
         jPasswordFieldSenha = new javax.swing.JPasswordField();
         jButtonVoltar = new javax.swing.JButton();
-        jLabelSenha2 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jLabelSenha = new javax.swing.JLabel();
+        jComboBoxTipoUsuario = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(0, 0, 204));
@@ -57,8 +57,8 @@ public class CadastroView extends javax.swing.JFrame {
             }
         });
 
-        jLabelSenha.setFont(new java.awt.Font("Arial", 0, 23)); // NOI18N
-        jLabelSenha.setText("Confirmar Senha");
+        jLabelConfirmarSenha.setFont(new java.awt.Font("Arial", 0, 23)); // NOI18N
+        jLabelConfirmarSenha.setText("Confirmar Senha");
 
         jLabelUsuario.setFont(new java.awt.Font("Arial", 0, 23)); // NOI18N
         jLabelUsuario.setText("Usuário");
@@ -84,8 +84,8 @@ public class CadastroView extends javax.swing.JFrame {
         jLabelCadastrar.setFont(new java.awt.Font("Arial", 0, 35)); // NOI18N
         jLabelCadastrar.setText("Registro");
 
-        jLabelSenha1.setFont(new java.awt.Font("Arial", 0, 20)); // NOI18N
-        jLabelSenha1.setText("Tipo de usuário");
+        jLabelTipoUsuario.setFont(new java.awt.Font("Arial", 0, 20)); // NOI18N
+        jLabelTipoUsuario.setText("Tipo de usuário");
 
         jPasswordFieldSenha.setText("jPasswordField1");
         jPasswordFieldSenha.addActionListener(new java.awt.event.ActionListener() {
@@ -105,14 +105,14 @@ public class CadastroView extends javax.swing.JFrame {
             }
         });
 
-        jLabelSenha2.setFont(new java.awt.Font("Arial", 0, 23)); // NOI18N
-        jLabelSenha2.setText("Senha");
+        jLabelSenha.setFont(new java.awt.Font("Arial", 0, 23)); // NOI18N
+        jLabelSenha.setText("Senha");
 
-        jComboBox1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Recepcionista", "Instrutor", "Gerente", " " }));
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
+        jComboBoxTipoUsuario.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jComboBoxTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Recepcionista", "Instrutor", "Gerente", " " }));
+        jComboBoxTipoUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
+                jComboBoxTipoUsuarioActionPerformed(evt);
             }
         });
 
@@ -130,8 +130,8 @@ public class CadastroView extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabelSenha1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jComboBoxTipoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabelTipoUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 152, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(322, 322, 322)
@@ -141,8 +141,8 @@ public class CadastroView extends javax.swing.JFrame {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jTextFieldNomeDeUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabelUsuario)
-                                    .addComponent(jLabelSenha2)
-                                    .addComponent(jLabelSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                    .addComponent(jLabelSenha)
+                                    .addComponent(jLabelConfirmarSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addComponent(jPasswordFieldConfirmarSenha, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 386, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -171,15 +171,15 @@ public class CadastroView extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(46, 46, 46)
-                        .addComponent(jLabelSenha1, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jLabelTipoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jComboBoxTipoUsuario, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 55, Short.MAX_VALUE)
-                        .addComponent(jLabelSenha2, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(43, 43, 43)
                         .addComponent(jLabelSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
+                        .addComponent(jLabelConfirmarSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPasswordFieldConfirmarSenha, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
@@ -222,9 +222,9 @@ public class CadastroView extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButtonVoltarActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+    private void jComboBoxTipoUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxTipoUsuarioActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
+    }//GEN-LAST:event_jComboBoxTipoUsuarioActionPerformed
 
     public JPasswordField getjPasswordFieldSenha() {
         return jPasswordFieldSenha;
@@ -284,12 +284,12 @@ public class CadastroView extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButtonEnviar;
     private javax.swing.JButton jButtonVoltar;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBoxTipoUsuario;
     private javax.swing.JLabel jLabelCadastrar;
+    private javax.swing.JLabel jLabelConfirmarSenha;
     private javax.swing.JLabel jLabelIconeUsuario;
     private javax.swing.JLabel jLabelSenha;
-    private javax.swing.JLabel jLabelSenha1;
-    private javax.swing.JLabel jLabelSenha2;
+    private javax.swing.JLabel jLabelTipoUsuario;
     private javax.swing.JLabel jLabelUsuario;
     private javax.swing.JPasswordField jPasswordFieldConfirmarSenha;
     private javax.swing.JPasswordField jPasswordFieldSenha;

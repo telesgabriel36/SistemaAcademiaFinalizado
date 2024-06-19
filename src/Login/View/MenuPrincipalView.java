@@ -29,7 +29,7 @@ public class MenuPrincipalView extends javax.swing.JFrame {
         jLabelMenuPrincipal = new javax.swing.JLabel();
         jButtonAlunos = new javax.swing.JButton();
         jButtonFuncionarios = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jButtonCadastrarAluno = new javax.swing.JButton();
         jButtonAvaliacoes = new javax.swing.JButton();
         jButtonCadastrarFuncionario = new javax.swing.JButton();
         jButtonPagamentos = new javax.swing.JButton();
@@ -72,17 +72,17 @@ public class MenuPrincipalView extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonFuncionarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 170, 260, 80));
 
-        jButton3.setBackground(new java.awt.Color(0, 0, 0));
-        jButton3.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
-        jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Cadastrar Aluno");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonCadastrarAluno.setBackground(new java.awt.Color(0, 0, 0));
+        jButtonCadastrarAluno.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
+        jButtonCadastrarAluno.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonCadastrarAluno.setText("Cadastrar Aluno");
+        jButtonCadastrarAluno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButtonCadastrarAluno.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                jButtonCadastrarAlunoActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 260, 80));
+        getContentPane().add(jButtonCadastrarAluno, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, 260, 80));
 
         jButtonAvaliacoes.setBackground(new java.awt.Color(0, 0, 0));
         jButtonAvaliacoes.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
@@ -135,7 +135,7 @@ public class MenuPrincipalView extends javax.swing.JFrame {
         jButtonDespesas.setBackground(new java.awt.Color(0, 0, 0));
         jButtonDespesas.setFont(new java.awt.Font("Arial", 0, 22)); // NOI18N
         jButtonDespesas.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonDespesas.setText("Pagamentos");
+        jButtonDespesas.setText("Despesas");
         jButtonDespesas.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButtonDespesas.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,39 +199,58 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonAlunosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAlunosActionPerformed
-        // TODO add your handling code here:
+        AlunosView telaAlunos = new AlunosView();
+        telaAlunos.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonAlunosActionPerformed
 
     private void jButtonFuncionariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonFuncionariosActionPerformed
-        // TODO add your handling code here:
+        FuncionariosView telaFuncionarios = new FuncionariosView();
+        telaFuncionarios.setVisible(true);
+        this.dispose(); 
     }//GEN-LAST:event_jButtonFuncionariosActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton3ActionPerformed
+    private void jButtonCadastrarAlunoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarAlunoActionPerformed
+        CadastrarAlunoView cadastrarAluno = new CadastrarAlunoView();
+        cadastrarAluno.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButtonCadastrarAlunoActionPerformed
 
     private void jButtonAvaliacoesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAvaliacoesActionPerformed
-        // TODO add your handling code here:
+        AvaliacoesView telaAvaliacoes = new AvaliacoesView();
+        telaAvaliacoes.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonAvaliacoesActionPerformed
 
     private void jButtonCadastrarFuncionarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCadastrarFuncionarioActionPerformed
-        // TODO add your handling code here:
+        CadastrarFuncionarioView cadastrarFuncionario = new CadastrarFuncionarioView();
+        cadastrarFuncionario.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonCadastrarFuncionarioActionPerformed
 
     private void jButtonPagamentosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPagamentosActionPerformed
-        // TODO add your handling code here:
+        PagamentosView telaPagamentos =  new PagamentosView();
+        telaPagamentos.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonPagamentosActionPerformed
 
     private void jButtonAgendarAvaliacaoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendarAvaliacaoActionPerformed
-        // TODO add your handling code here:
+        AgendarAvaliacaoView telaAgendarAvaliacao = new AgendarAvaliacaoView();
+        telaAgendarAvaliacao.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonAgendarAvaliacaoActionPerformed
 
     private void jButtonDespesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDespesasActionPerformed
-        // TODO add your handling code here:
+        DespesasView telaDespesas = new DespesasView();
+        telaDespesas.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButtonDespesasActionPerformed
 
     private void jButtonLancarPagamentoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonLancarPagamentoActionPerformed
-        // TODO add your handling code here:
+        LancarPagamentoView telaLancarPagamento = new LancarPagamentoView();
+        telaLancarPagamento.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonLancarPagamentoActionPerformed
 
     private void jButtonSairDoSistemaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSairDoSistemaActionPerformed
@@ -240,11 +259,16 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSairDoSistemaActionPerformed
 
     private void jButtonAdicionarDespesasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAdicionarDespesasActionPerformed
-        // TODO add your handling code here:
+        AdicionarDespesasView telaAdicionarDespesas = new AdicionarDespesasView();
+        telaAdicionarDespesas.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonAdicionarDespesasActionPerformed
 
     private void jButtonCaixaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCaixaActionPerformed
-        // TODO add your handling code here:
+        CaixaView telaCaixa =  new CaixaView();
+        telaCaixa.setVisible(true);
+        this.dispose();
+        
     }//GEN-LAST:event_jButtonCaixaActionPerformed
 
     /**
@@ -283,11 +307,11 @@ public class MenuPrincipalView extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButtonAdicionarDespesas;
     private javax.swing.JButton jButtonAgendarAvaliacao;
     private javax.swing.JButton jButtonAlunos;
     private javax.swing.JButton jButtonAvaliacoes;
+    private javax.swing.JButton jButtonCadastrarAluno;
     private javax.swing.JButton jButtonCadastrarFuncionario;
     private javax.swing.JButton jButtonCaixa;
     private javax.swing.JButton jButtonDespesas;

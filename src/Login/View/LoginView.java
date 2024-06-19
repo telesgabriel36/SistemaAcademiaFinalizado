@@ -180,6 +180,7 @@ public class LoginView extends javax.swing.JFrame {
     private void jButtonEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonEntrarActionPerformed
         MenuPrincipalView telaMenu = new MenuPrincipalView();
         telaMenu.setVisible(true);
+        this.dispose();
     }//GEN-LAST:event_jButtonEntrarActionPerformed
 
     private void jButtonRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonRegistrarActionPerformed
